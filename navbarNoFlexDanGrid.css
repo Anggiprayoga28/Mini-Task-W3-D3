@@ -1,0 +1,107 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #4a90c2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            display: block;
+            width: 100%;
+        }
+
+        .nav-link {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-item:last-child .nav-link {
+            border-bottom: none;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            .nav-item {
+                display: inline-block;
+                width: auto;
+            }
+
+            .nav-link {
+                border-bottom: none;
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-item:last-child .nav-link {
+                border-right: none;
+            }
+        }
+
+
+        @media screen and (min-width: 1024px) {
+            .navbar {
+                text-align: center;
+            }
+
+            .nav-menu {
+                display: inline-block;
+            }
+
+            .nav-link {
+                padding: 15px 30px;
+            }
+        }
+
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
