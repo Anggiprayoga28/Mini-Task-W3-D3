@@ -23,8 +23,6 @@
 
         .navbar {
             background-color: #4a90c2;
-            position: relative;
-            overflow: hidden;
         }
 
         .nav-menu {
@@ -34,12 +32,12 @@
         }
 
         .nav-item {
-            display: block;
+            display: inline - block;
             width: 100%;
         }
 
         .nav-link {
-            display: block;
+            display: inline-block;
             color: white;
             text-decoration: none;
             padding: 15px 20px;
@@ -57,10 +55,10 @@
         }
 
 
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 1024px) {
             .nav-item {
-                display: inline-block;
-                width: auto;
+                display: inline;
+                margin: 0 auto;
             }
 
             .nav-link {
@@ -68,25 +66,15 @@
                 border-right: 1px solid rgba(255, 255, 255, 0.1);
             }
 
-            .nav-item:last-child .nav-link {
-                border-right: none;
-            }
-        }
+    
 
 
-        @media screen and (min-width: 1024px) {
-            .navbar {
-                text-align: center;
-            }
-
+        @media screen and (max-width: 768px) {
+        
             .nav-menu {
-                display: inline-block;
+                display: inline;
             }
 
-            .nav-link {
-                padding: 15px 30px;
-            }
-        }
 
 
         .content {
@@ -105,3 +93,5 @@
             line-height: 1.6;
             margin-bottom: 15px;
         }
+        }
+    }
